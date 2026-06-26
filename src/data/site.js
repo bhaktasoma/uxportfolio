@@ -5,7 +5,6 @@ export const NAV = [
   { to: "/", label: "About", end: true },
   { to: "/leadership", label: "Leadership" },
   { to: "/case-studies", label: "Case Studies" },
-  { to: "/contact", label: "Contact" },
 ];
 
 export const SOCIAL = {
