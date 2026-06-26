@@ -5,7 +5,6 @@ import Home from "./pages/Home.jsx";
 import Leadership from "./pages/Leadership.jsx";
 import CaseStudies from "./pages/CaseStudies.jsx";
 import CaseStudy from "./pages/CaseStudy.jsx";
-import Contact from "./pages/Contact.jsx";
 
 // Scroll to top on route change (and honor in-page hash anchors).
 function ScrollToTop() {
@@ -26,7 +25,6 @@ export default function App() {
           <Route path="/leadership" element={<Leadership />} />
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/case-studies/:slug" element={<CaseStudy />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Layout>
