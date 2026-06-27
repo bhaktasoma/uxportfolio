@@ -5,18 +5,27 @@ import ImageCarousel from "../components/ImageCarousel.jsx";
 import { cases, getCase } from "../data/cases.js";
 import TeamBuildingDiagram from "../components/diagrams/TeamBuildingDiagram.jsx";
 import AIWorkflowDiagram from "../components/diagrams/AIWorkflowDiagram.jsx";
-import CostHierarchyDiagram from "../components/diagrams/CostHierarchyDiagram.jsx";
 
 const DIAGRAMS = {
   "team-building": TeamBuildingDiagram,
   "ai-workflow": AIWorkflowDiagram,
-  "cost-hierarchy": CostHierarchyDiagram,
 };
 
 function Block({ block }) {
   if (block.h2) return <h2>{block.h2}</h2>;
   if (block.h3) return <h3>{block.h3}</h3>;
   if (block.callout) return <div className="callout">{block.callout}</div>;
+  if (block.note)
+    return (
+      <p className="cs-note">
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="8" cy="8" r="7" stroke="currentColor" strokeWidth="1.3" />
+          <path d="M8 7.2v4" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" />
+          <circle cx="8" cy="4.9" r=".9" fill="currentColor" />
+        </svg>
+        <span>{block.note}</span>
+      </p>
+    );
   if (block.ul)
     return (
       <ul>
@@ -125,8 +134,12 @@ function groupSections(sections) {
       groups.push({ type: "imagePair", pair: block });
     } else if (block.atGlance) {
       groups.push({ type: "atGlance", atGlance: block.atGlance });
+    } else if (block.compare) {
+      groups.push({ type: "compare", compare: block.compare });
     } else if (block.video) {
       groups.push({ type: "video", video: block });
+    } else if (block.carousel) {
+      groups.push({ type: "carousel", carousel: block });
     } else {
       const last = groups[groups.length - 1];
       if (last && last.type === "prose") last.blocks.push(block);
@@ -184,24 +197,58 @@ export default function CaseStudy() {
                 </div>
               ))}
             </div>
+          ) : group.type === "compare" ? (
+            <figure className="cs-compare" key={i}>
+              <table>
+                <thead>
+                  <tr>
+                    <th>{group.compare.label || ""}</th>
+                    {group.compare.cols.map((col, c) => (
+                      <th key={c}>{col}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {group.compare.rows.map((row, r) => (
+                    <tr key={r}>
+                      <td>{row[0]}</td>
+                      {row.slice(1).map((cell, c) => (
+                        <td key={c}>{cell}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              {group.compare.caption && <figcaption>{group.compare.caption}</figcaption>}
+            </figure>
+          ) : group.type === "carousel" ? (
+            <div className={`cs-gallery${group.carousel.full !== false ? " cs-gallery--full" : ""}`} key={i}>
+              {group.carousel.heading && <h3>{group.carousel.heading}</h3>}
+              <ImageCarousel
+                items={group.carousel.items}
+                onImageClick={(item, idx) =>
+                  setLightbox({
+                    items: group.carousel.items.map((it) => ({ src: it.src, alt: it.alt || "" })),
+                    index: idx,
+                  })
+                }
+              />
+            </div>
           ) : group.type === "image" ? (
             <figure className={`cs-diagram${group.image.compact ? " cs-diagram--compact" : ""}`} key={i}>
-              {group.image.compact ? (
-                <button
-                  className="cs-diagram-zoom"
-                  onClick={() => setLightbox({ items: [{ src: group.image.image, alt: group.image.alt || "" }], index: 0 })}
-                  aria-label="View full size"
-                >
-                  <img src={group.image.image} alt={group.image.alt || ""} />
-                </button>
-              ) : (
+              <button
+                className={`cs-diagram-zoom${group.image.compact ? "" : " cs-diagram-zoom--full"}${group.image.large ? " cs-diagram-zoom--lg" : ""}`}
+                style={group.image.maxWidth ? { maxWidth: group.image.maxWidth } : undefined}
+                onClick={() => setLightbox({ items: [{ src: group.image.image, alt: group.image.alt || "" }], index: 0 })}
+                aria-label="View full size"
+              >
                 <img src={group.image.image} alt={group.image.alt || ""} />
-              )}
+              </button>
               {group.image.caption && <figcaption>{group.image.caption}</figcaption>}
             </figure>
           ) : group.type === "imagePair" ? (
             <figure className="cs-diagram cs-diagram--pair" key={i}>
-              <div className="cs-diagram-pair-row">
+              <div className={`cs-diagram-pair-row${group.pair.stack ? " cs-diagram-pair-row--stack" : ""}`}>
                 {group.pair.imagePair.map((item, j) => (
                   <div className="cs-diagram-pair-item" key={j}>
                     <button
