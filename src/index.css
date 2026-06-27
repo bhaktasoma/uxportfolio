@@ -381,9 +381,43 @@ a:hover { color: var(--accent-ink); }
 .cs-body li { margin-top: .5rem; }
 .callout {
   font-style: italic; font-weight: 600; text-align: center;
-  color: var(--ink); font-size: var(--step-2); line-height: 1.45;
-  max-width: 44rem; margin: 2.5rem auto; padding-block: 1.5rem;
-  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  color: var(--ink); font-size: var(--step-1); line-height: 1.5;
+  max-width: 40rem; margin: 2.25rem auto; padding-top: .25rem;
+}
+.callout::before {
+  content: "“"; display: block; font-style: normal; font-weight: 700;
+  font-size: 1.6rem; line-height: 1; color: var(--ink-3); margin-bottom: .15rem;
+}
+.cs-note {
+  display: flex; gap: .55rem; align-items: flex-start;
+  color: var(--ink-2); font-size: var(--step-0); line-height: 1.65;
+}
+.cs-note svg {
+  flex: none; width: 1em; height: 1em; margin-top: .3em;
+  color: var(--ink-3);
+}
+.cs-quote {
+  position: relative; margin: 2.75rem auto; max-width: 30rem;
+  padding: 1.9rem 2.1rem 1.65rem;
+  background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--radius);
+  border-left: 3px solid var(--accent);
+  box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 12px 28px -16px rgba(0,0,0,.18);
+}
+.cs-quote p {
+  margin: 0; font-style: italic; color: var(--ink-2); line-height: 1.65; font-size: var(--step-0);
+}
+.cs-quote p::before {
+  content: "“"; font-style: normal; font-weight: 700; color: var(--accent-ink);
+  font-size: 1.5rem; line-height: 0; vertical-align: -.28em; margin-right: .2rem;
+}
+.cs-quote cite {
+  display: block; margin-top: 1.25rem; padding-top: .9rem; border-top: 1px solid var(--line);
+  font-style: normal; font-family: var(--mono); text-transform: uppercase; letter-spacing: .03em;
+  font-weight: 500; font-size: .76rem; color: var(--ink);
+}
+.cs-quote cite span {
+  display: block; margin-top: .3rem; font-weight: 400; letter-spacing: 0; text-transform: none;
+  font-family: var(--sans); color: var(--ink-3); font-size: var(--step--1); line-height: 1.45;
 }
 .divider { border: 0; border-top: 1px solid var(--line); margin-block: clamp(2.5rem, 4vw, 4rem); }
 .cs-diagram {
@@ -398,6 +432,24 @@ a:hover { color: var(--accent-ink); }
   font-style: italic;
 }
 .cs-diagram--compact { display: flex; flex-direction: column; align-items: center; }
+.cs-compare {
+  margin: 2.5rem auto; max-width: none;
+  border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+}
+.cs-compare table { width: 100%; border-collapse: collapse; font-size: var(--step--1); }
+.cs-compare th, .cs-compare td { padding: .75rem 1rem; text-align: left; vertical-align: top; }
+.cs-compare th {
+  font-family: var(--mono); text-transform: uppercase; letter-spacing: .03em; font-weight: 500;
+  font-size: .78rem; color: var(--ink-3); background: var(--paper-2);
+  border-bottom: 1px solid var(--line);
+}
+.cs-compare td:first-child, .cs-compare th:first-child { color: var(--ink-3); width: 22%; }
+.cs-compare tr + tr td { border-top: 1px solid var(--line); }
+.cs-compare td { color: var(--ink-2); line-height: 1.5; }
+.cs-compare figcaption {
+  padding: .75rem 1rem; font-size: var(--step--1); color: var(--ink-3); font-style: italic;
+  border-top: 1px solid var(--line);
+}
 .cs-diagram-zoom {
   position: relative; display: block; width: 100%; max-width: 460px; padding: 0;
   border: none; background: none; cursor: zoom-in;
@@ -415,11 +467,15 @@ a:hover { color: var(--accent-ink); }
   opacity: 0; transition: opacity .18s ease;
 }
 .cs-diagram-zoom:hover::after { opacity: 1; }
+.cs-diagram-zoom--full { max-width: none; }
+.cs-diagram-zoom--lg { max-width: 552px; }
 
 .cs-diagram--pair { display: block; }
 .cs-diagram-pair-row {
   display: flex; flex-wrap: wrap; justify-content: center; gap: clamp(1rem, 3vw, 2rem);
 }
+.cs-diagram-pair-row--stack { flex-direction: column; align-items: center; }
+.cs-diagram-pair-row--stack .cs-diagram-pair-item { max-width: 460px; width: 100%; }
 .cs-diagram-pair-item { display: flex; flex-direction: column; align-items: center; flex: 1 1 360px; max-width: 460px; }
 .cs-diagram-pair-item .cs-diagram-zoom { max-width: 100%; }
 .cs-diagram-pair-item figcaption {
@@ -447,6 +503,12 @@ a:hover { color: var(--accent-ink); }
 }
 .image-carousel-slide figcaption {
   margin-top: .9rem; font-size: var(--step--1); color: var(--ink-3); text-align: center; font-style: italic;
+}
+.cs-gallery--full .image-carousel-slide .cs-diagram-zoom {
+  max-width: none; width: 100%; height: auto;
+}
+.cs-gallery--full .image-carousel-slide .cs-diagram-zoom img {
+  width: 100%; height: auto; max-width: 100%; max-height: none;
 }
 
 .lightbox {

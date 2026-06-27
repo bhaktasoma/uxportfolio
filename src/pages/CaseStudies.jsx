@@ -10,7 +10,7 @@ export default function CaseStudies() {
           Case <em>studies</em>.
         </h1>
         <p className="lead">
-          Four stories of UX as a business driver, from founding products and design systems to
+          Six stories of UX as a business driver, from founding products and design systems to
           reshaping how teams grow and how customers buy.
         </p>
       </section>
