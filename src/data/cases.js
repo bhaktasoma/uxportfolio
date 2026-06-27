@@ -16,8 +16,9 @@ import ceEventCorrelation from "../assets/images/CE/27_ce.png";
 import ceIAFlatten from "../assets/images/CE/30_ce.png";
 import ceFinalOverview from "../assets/images/CE/4_ce.png";
 import ceScreenClusterExplorer from "../assets/images/CE/3_ce.png";
-import ceScreenWorkloadIdle from "../assets/images/CE/34_ce.png";
-import ceScreenNamespaceExplorer from "../assets/images/CE/35_ce.png";
+import ceScreenWorkloadEvents from "../assets/images/CE/5_ce.png";
+import ceRelativityQuote from "../assets/images/CE/41_ce.png";
+import ceCompetitiveLandscape from "../assets/images/CE/13_ce.png";
 import quixCover from "../assets/images/quix/cover_quix.jpeg";
 import quixCost from "../assets/images/quix/1_quix.png";
 import quixBuildBuy from "../assets/images/quix/5_quix.png";
@@ -44,6 +45,7 @@ import dsBuildingSystem from "../assets/images/design-system-startup/02-building
 import dsContentSystem from "../assets/images/design-system-startup/03-content-design-system.jpg";
 import dsFoundationContrast from "../assets/images/design-system-startup/04-foundation-contrast.jpg";
 import dsComponentCustomization from "../assets/images/design-system-startup/05-component-customization.jpg";
+import dsDesignPrinciples from "../assets/images/design-system-startup/06-design-principles.jpg";
 import plgSolutionBuilder from "../assets/images/plg/1_plg.png";
 import plgThreeProducts from "../assets/images/plg/2_plg.png";
 import plgChallenges from "../assets/images/plg/3_plg.png";
@@ -239,6 +241,7 @@ export const cases = [
     ],
     gallery: {
       items: [
+        { src: dsDesignPrinciples, alt: "Design Principles slide outlining a three-tiered framework: Functional First, Easy to Use, and Delightful" },
         { src: dsAtomicSystem, alt: "Atomic Design System slide showing the foundation-to-pages hierarchy: sub-atomic particles, atoms, molecules, organisms, templates, and pages" },
         { src: dsBuildingSystem, alt: "Building the Design System slide outlining four phases: research and benchmarking, define and scope, design and validate, stress test and iterate" },
         { src: dsContentSystem, alt: "Content Design System slide covering voice and tone principles, grammar and mechanics rules, and scaling through centralized content tokens" },
@@ -253,20 +256,20 @@ export const cases = [
     year: "2020",
     company: "Harness",
     role: "Founding UX Leader",
-    title: "Harnessing UX to Solve Cloud Cost Challenges",
+    title: "Research as the Pitch: Cloud Cost at Harness",
     summary:
-      "Took Cloud Cost Management from idea to GA in six months, leading a product trio of design, PM, and engineering to 85% CSAT, 92% task success, and 70 customers by launch.",
-    cardRole: "Founding UX Leader, idea to GA in six months, 85% CSAT.",
+      "Took Cloud Cost Management from idea to GA in six months on a research-led product strategy: a Lean UX Canvas that built the case, a 25-customer co-creation panel, and hands-on design leadership through 85% CSAT, 92% task success, and 70 customers by launch.",
+    cardRole: "Founding UX Leader, research-led strategy, idea to GA in six months.",
     lead:
-      "As the first UX hire at Harness, I took Cloud Cost Management from idea to general availability in six months. The product itself was new territory, and so was getting design, product, and engineering to build it as one team instead of three handoffs.",
+      "I joined Harness as its first UX hire, leading design for CI/CD, then Security Ops and Feature Flags. That vantage point surfaced cloud cost as a real, unowned opportunity. I used research, a Lean UX Canvas and early customer conversations, to build the case, pitched it with a Technical Lead partner to our CEO and CTO, and took Cloud Cost Management from a blank team to GA in six months.",
     meta: [
-      ["Role", "Founding UX Leader"],
-      ["Focus", "Product strategy, research, data viz"],
-      ["Team", "Product trio: PM, engineering lead, SRE, design"],
+      ["Role", "Founding UX Leader → Product Strategist"],
+      ["Focus", "Research-led strategy, generative research, co-creation, data viz"],
+      ["Team", "PM, Engineering Lead, and SRE, plus a 25-customer co-creation panel"],
     ],
     stats: [
+      { num: "25", label: "Customers in Harness's first co-creation panel" },
       { num: "85%", label: "Customer satisfaction (NPS & usability)" },
-      { num: "92%", label: "Task success in cost workflows" },
       { num: "3×", label: "Engagement in first two quarters" },
       { num: "70", label: "Customers by GA" },
     ],
@@ -276,13 +279,13 @@ export const cases = [
         atGlance: [
           {
             n: "Challenge",
-            title: "A new category, no playbook, and three teams who'd never built together",
-            p: "Cloud cost wasn't a category Harness or its customers had a shared language for yet. I was the first UX hire, and design, product, and engineering had no track record of building anything end to end as one team.",
+            title: "A problem nobody owned yet, surfaced from inside CI/CD",
+            p: "Leading design across CI/CD, Security Ops, and Feature Flags gave me a view across the whole engineering workflow, and surfaced cloud cost as a real, unowned problem, not a request on my desk.",
           },
           {
             n: "Approach",
-            title: "Lean UX, a 25-customer panel, and a product trio that met every week",
-            p: "I ran Lean UX to keep the team honest about what we actually knew, built a co-creation panel instead of guessing at the roadmap, and made the product trio, design, PM, and engineering, jointly own the outcome instead of design executing someone else's brief.",
+            title: "Make research the pitch, then keep it running as a co-creation loop",
+            p: "With a Technical Lead partner, I built a Lean UX Canvas and ran early customer conversations to make the market gap undeniable to our CEO and CTO, then stood up a 25-customer co-creation panel and stayed hands-on in research straight through GA.",
           },
           {
             n: "Impact",
@@ -300,40 +303,59 @@ export const cases = [
               caption: "Cluster Cost Explorer: where a DevOps lead starts, total cost down to efficiency score.",
             },
             {
-              src: ceScreenWorkloadIdle,
-              alt: "Workload-level idle cost screen showing CPU idle cost, memory idle cost, unallocated cost, and a daily idle cost trend with deployment events",
-              caption: "Workload-level idle cost, with deployment events plotted right against the spend they caused.",
+              src: ceFinalOverview,
+              alt: "Cost Explorer overview dashboard showing total cloud cost, clusters cost, cost breakdown, cost efficiency, and top applications, clusters, and cloud accounts by spend",
+              caption: "The Overview tab: every cloud, cluster, and account rolled into one pane of glass.",
             },
             {
-              src: ceScreenNamespaceExplorer,
-              alt: "Cost explorer grouped by namespace, showing a daily stacked cost chart, a namespace cost table, and the filter panel",
-              caption: "The one-page explorer, grouped by namespace, the control usability testing told us to surface.",
+              src: ceScreenWorkloadEvents,
+              alt: "Workload event-to-cost correlation screen showing a cost spike linked to a Kubernetes deployment diff with replicas changed from 2 to 3",
+              caption: "Drilling into a workload: the exact deployment diff behind a cost spike, not just a timestamp.",
             },
           ],
         },
       },
+      { h2: "Where this started: inside CI/CD, not a roadmap meeting" },
+      { p: "At Harness, I led design for CI/CD, our flagship DevOps platform, reporting directly to our CTO. My users were sophisticated and technical, field and internal engineers, so earning credibility meant learning the technology as deeply as I learned the people using it. As the org grew, I took on Security Ops and Feature Flags too, and leading design across all three surfaced the same complaint everywhere: nobody could see cloud cost rising until it was already too late to act on it." },
+      { note: "Harness grew 5× in ARR company-wide across this stretch, CI/CD, Security Ops, Feature Flags, and Cloud Cost Management together. That's the context for the number on my career timeline, not a metric this product drove alone." },
+      { h2: "The problem" },
+      { p: "As deployment shifted left to engineering teams on self-service CD platforms, velocity went up and so did cloud spend. AWS put a number on it at re:Invent 2019: <strong>35% of cloud spend is waste</strong>. Finance was invoiced every 30 days with no context for why, and getting an answer from engineering took another 30 days, or never." },
+      { callout: "Cloud consumers are 100% reactive to the teams who actually see the cost data. The people creating the spend can't see it." },
       {
         image: ceProblemLoop,
+        compact: true,
+        maxWidth: "80%",
         alt: "Diagram showing engineers deploying freely on CI/CD while the cloud bill rises 500%, taking the CFO 30 days to flag it and the engineer 30 more days to troubleshoot, captioned 35% of cloud spend is waste",
         caption: "The loop we were actually designing against: nobody saw the cost until it was already too late to act on it.",
       },
-      { h2: "The problem" },
-      { p: "As deployment responsibility shifted left to engineering teams on self-service CD platforms, developer velocity went up, and so did cloud spending. At AWS re:Invent 2019, the AWS Cloud Economics team put a number on it: <strong>35% of cloud spend is waste</strong>. Finance teams were invoiced every 30 days with no context for why costs rose, and when a CFO asked why, it typically took another 30 days, or never, for an engineer to go investigate." },
-      { callout: "Cloud consumers are 100% reactive to the teams who actually see the cost data. The people creating the spend can't see it." },
-      { h2: "Building it as a product trio" },
-      { p: "I write on my <a href=\"/leadership\">Leadership page</a> about building a strong product trio culture, design, product, and engineering operating as equal partners instead of design executing someone else's brief. This is where that habit started. I partnered closely with our Director of Product Management, our Engineering Lead, a SWAT engineer, and an SRE from day one, not after the design was already decided." },
-      { p: "I took a high-level brief from the CTO and ran discovery with that same group, not alone. I introduced the <strong>Lean UX Canvas</strong> to keep our assumptions visible instead of buried in one person's head, built a Vision Deck, and socialized the concept across the org to build momentum before we asked anyone for headcount or budget." },
+      { h2: "Making the case, then building the team" },
+      { p: "Cloud cost wasn't on anyone's roadmap, so I partnered with a Technical Lead to size the opportunity, and we pitched our CEO and CTO directly: the market gap, the data and credibility advantage our CI/CD platform gave us, and a solution grounded in the workflow I'd already been living in across two other products. That pitch got us the headcount, not the other way around." },
+      {
+        image: ceCompetitiveLandscape,
+        alt: "Competitive landscape analysis comparing cloud providers, startups, and established cost management vendors against what's missing, our strength, How might we questions, and resulting strategy: complete developer context and cost visibility, root cost analysis and recommendation, hourly time-to-know and governance",
+        caption: "The research artifact behind the pitch: where every competitor was reactive and infrastructure-only, and where our CI/CD platform let us be neither.",
+      },
+      { p: "Buy-in is where the harder work started: no product, no PM, no engineering team yet, just the case we'd made. I helped bring on a Director of Product Management to turn the opportunity into a fundable roadmap, and an Engineering Lead and SRE to scope what was buildable in six months. What mattered more than headcount was keeping research and design a strategic partner once that team existed, not an execution layer brought in after the roadmap was set, the same habit I describe on my <a href=\"/leadership\">Leadership page</a>." },
+      { p: "With the team formed, I brought that group into discovery rather than handing them a finished brief, built the pitch's Lean UX Canvas out into a full Vision Deck, and we socialized it across the org to build momentum before asking for more headcount or budget." },
+      {
+        quote:
+          "We worked together on a new product from the inception, i.e. Continuous Efficiency [Cloud Cost Management]. Early on, she introduced the Lean Canvas approach, which was instrumental in defining the early roadmap of the product. She helped build and present the Vision Deck and posters to socialize the early ideas of the product. This greatly helped in building momentum. Soma championed user research for defining the product roadmap and user experience, and conducted many interview sessions with potential customers to validate concepts.",
+        quoteName: "Puneet Saraswat",
+        quoteRole: "Technical Lead at Harness, partnered on this product from day one · now Co-founder & CDO, Autoheal",
+      },
       {
         image: ceLeanCanvas,
         compact: true,
+        maxWidth: "667px",
         alt: "Diagram showing a Lean UX process moving from the brief through discovery and ideation to a vision and concept, then socialize, build, and validate toward a milestone release",
-        caption: "The path from a CTO's brief to a shippable concept, with the trio at every step, not just at the handoffs.",
+        caption: "The path from a self-initiated pitch to a shippable concept, with the team at every step, not just at the handoffs.",
       },
       { h3: "Customer-centric innovation" },
-      { p: "Cost visibility was the gap nobody disputed, so I built a 25-customer panel and stood up Harness's first co-creation initiative. Research, competitive analysis, and usability studies surfaced the same pain points again and again, from a lead systems engineer, a technical PM, and a VP of TechOps among others:" },
+      { p: "Cost visibility was the gap nobody disputed, so I stood up a 25-customer panel, Harness's first co-creation initiative, running structured interviews, competitive teardowns, and affinity-diagramming sessions with our PM and customer service team. The same pain points surfaced again and again, from a lead systems engineer, a technical PM, and a VP of TechOps among others:" },
       {
         image: ceCustomerQuotes,
         compact: true,
+        maxWidth: "667px",
         alt: "Three customer quote cards from a lead systems engineer, a technical PM, and a VP of TechOps, on overprovisioning, manual cost exporting, and wanting to charge cost back to individual teams",
         caption: "The panel's own words, not a summary of them. This is what we designed against.",
       },
@@ -345,27 +367,27 @@ export const cases = [
         "Kubernetes cost tracking was a major, unsolved problem for almost everyone we talked to.",
       ] },
       { h2: "Designing for the developer's context" },
-      { p: "The first design challenge was understanding how developers actually think about cost, then mapping that into a simple, one-page cost-exploration tool. I leaned on context mapping, persona work across five different stakeholders, competitive analysis, and a lot of data-visualization exploration before any of it became a screen." },
+      { p: "The first challenge was understanding how developers think about cost, then mapping that into a simple, one-page exploration tool, through context mapping, five-stakeholder persona work, competitive analysis, and a lot of data-viz exploration before any of it became a screen." },
       {
         image: cePersonas,
         alt: "Table comparing five personas, engineer, DevOps, cloud center of excellence, CISO/CIO, and CFO, across responsibility, key duties, required content, cost pain, and why they care about cost",
         caption: "Five roles, five different relationships to the same number. None of them could be designed for the same way.",
       },
-      { p: "Cloud providers reported costs daily or monthly, but developers needed <strong>hourly granularity</strong>. Daily aggregation averaged out the spikes that actually signal inefficiency. For Kubernetes and ECS, I worked with our SREs to break total cost into utilized, idle, and unallocated spend across clusters, namespaces, workloads, and pods, so engineers could right-size proactively instead of finding a “zombie” workload by accident months later." },
+      { p: "Cloud providers reported cost daily or monthly, but developers needed <strong>hourly granularity</strong>, daily aggregation averaged out the spikes that actually signal inefficiency. With our SREs, I broke total cost into utilized, idle, and unallocated spend across clusters, namespaces, workloads, and pods, so engineers could right-size proactively instead of finding a “zombie” workload by accident months later." },
       {
         image: ceUtilizationConcept,
         compact: true,
         alt: "Cluster resource utilization map showing total cost split into allocated and unallocated, then further into utilized and idle spend",
         caption: "Total cost broken into the three numbers an engineer could actually act on.",
       },
-      { p: "I also gave engineers situational awareness by correlating cloud events, deployments, manifest changes, autoscaling, with cost spikes, so a Kubernetes replica change from 2 to 3 became visible as the cost driver it was, right next to the line in the manifest that caused it." },
+      { p: "I also correlated cloud events, deployments, manifest changes, autoscaling, with cost spikes, so a Kubernetes replica change from 2 to 3 showed up as the cost driver it was, right next to the manifest line that caused it." },
       {
         image: ceEventCorrelation,
         alt: "Event-to-cost correlation chart with a cost spike linked to a Kubernetes deployment diff showing replicas changed from 2 to 3",
         caption: "The exact deployment diff behind a cost spike, not just a timestamp asking the engineer to go find it themselves.",
       },
       { h2: "Validating with users" },
-      { p: "Across several rounds of design critique and task-based usability testing on a medium-fidelity prototype, I learned that users were lost in breadcrumbs, tabs, and filters. They wanted to compare cost across namespaces and clusters, and kept losing the “Group by” control inside a menu instead of finding it on the surface. I flattened the information architecture, surfaced grouping options as visible tabs, moved filter parameters into a dropdown, and turned “single pane of glass” into an actual one-page explorer instead of a slogan on a slide." },
+      { p: "Task-based usability testing on a medium-fidelity prototype showed users lost in breadcrumbs, tabs, and filters, hunting for a buried “Group by” control instead of comparing cost across namespaces and clusters. I flattened the IA, surfaced grouping as visible tabs, moved filters into a dropdown, and turned “single pane of glass” into an actual one-page explorer instead of a slogan." },
       {
         image: ceIAFlatten,
         compact: true,
@@ -373,7 +395,7 @@ export const cases = [
         caption: "What usability testing actually bought us: four fewer places to get lost before reaching the data.",
       },
       { h2: "Impact: UX as a business driver" },
-      { p: "Lean UX, research-driven design, and a product trio that owned the outcome together helped establish Cloud Cost Management as a real differentiator for Harness in DevOps, not a feature checkbox next to competitors' tools." },
+      { p: "Lean UX and a trio that owned the outcome together made Cloud Cost Management a real differentiator for Harness in DevOps, not a feature checkbox next to competitors' tools." },
       { ul: [
         "<strong>85%</strong> customer satisfaction (NPS & usability feedback)",
         "<strong>92%</strong> task success rate in cost tracking and optimization",
@@ -381,15 +403,29 @@ export const cases = [
         "<strong>3×</strong> increase in engagement in the first two quarters",
         "<strong>70 customers</strong> by GA, well ahead of where most new categories start",
       ] },
+      { p: "I built the executive Overview dashboard as small, interconnected stories, total cost, breakdown, efficiency, top spenders, so a CFO or VP could get account health at a glance without exploring." },
       {
         image: ceFinalOverview,
         compact: true,
         alt: "Continuous Efficiency overview dashboard showing total cost, cost breakdown by cluster, and a cost trend chart",
         caption: "What shipped: the single-pane view the original research panel had been asking for from the start.",
       },
-      { p: "One customer, Relativity, reduced cloud spend by 30 to 40% on a new microservice within 30 days, a six-figure annualized saving, with 10 to 15 more microservices lined up to onboard once that first one proved out." },
-      { h2: "What this taught me about leading through a trio" },
-      { p: "The product was new, but the bigger first for me was getting design, PM, and engineering to build something end to end as equal partners instead of three handoffs. Research shaped the right product, but the product trio is what kept it shaped correctly once engineering started building and reality pushed back on the plan. That's the same habit I describe on my <a href=\"/leadership\">Leadership page</a>, and Cloud Cost Management is where I learned it works under real deadline pressure, not just in theory." },
+      { p: "One customer, Relativity, cut cloud spend 30 to 40% on a new microservice within 30 days, a six-figure annualized saving, with 10 to 15 more microservices lined up once that first one proved out." },
+      {
+        image: ceRelativityQuote,
+        compact: true,
+        maxWidth: "667px",
+        alt: "Quote card from Shelby Lewin, Technical Product Manager at Relativity: during the first 30 days of implementation, we saw a noticeable change in our cloud spend across our engineering teams, with six-figure annualized savings",
+        caption: "Shelby Lewin, Technical Product Manager at Relativity, on what that 30-day result actually felt like from the customer side.",
+      },
+      {
+        quote:
+          "Soma was one of the best UX designers I have come across. Most struggle in the enterprise software world primarily because it's too technical, but she was very comfortable with it. She learnt Harness quickly and hit the ground running from day one. She evangelized the UX standard within Harness, and her energy and passion were especially felt in the Continuous Efficiency [Cloud Cost Management] product. She led the user research, UI/UX design, and a lot of collaboration.",
+        quoteName: "Rishi Singh",
+        quoteRole: "CTO at Harness, managed Soma directly · now Founder, BaseRock.ai",
+      },
+      { h2: "What this taught me about research as a strategic tool" },
+      { p: "The bigger first for me was proving research itself could be the strategic move, not a phase before the real work of design starts. The Lean UX Canvas and the 25-customer panel got us bought in, kept us honest about what we actually knew, and kept the product right once engineering started building and reality pushed back. UX isn't just what you build, it's how you evolve it: staying hands-on with customers and data through GA, not handing research off once the wireframes were done, is the habit I describe on my <a href=\"/leadership\">Leadership page</a>, and where I learned it holds up under real deadline pressure." },
     ],
   },
 

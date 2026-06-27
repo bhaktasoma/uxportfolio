@@ -396,6 +396,29 @@ a:hover { color: var(--accent-ink); }
   flex: none; width: 1em; height: 1em; margin-top: .3em;
   color: var(--ink-3);
 }
+.cs-quote {
+  position: relative; margin: 2.75rem auto; max-width: 30rem;
+  padding: 1.9rem 2.1rem 1.65rem;
+  background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--radius);
+  border-left: 3px solid var(--accent);
+  box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 12px 28px -16px rgba(0,0,0,.18);
+}
+.cs-quote p {
+  margin: 0; font-style: italic; color: var(--ink-2); line-height: 1.65; font-size: var(--step-0);
+}
+.cs-quote p::before {
+  content: "“"; font-style: normal; font-weight: 700; color: var(--accent-ink);
+  font-size: 1.5rem; line-height: 0; vertical-align: -.28em; margin-right: .2rem;
+}
+.cs-quote cite {
+  display: block; margin-top: 1.25rem; padding-top: .9rem; border-top: 1px solid var(--line);
+  font-style: normal; font-family: var(--mono); text-transform: uppercase; letter-spacing: .03em;
+  font-weight: 500; font-size: .76rem; color: var(--ink);
+}
+.cs-quote cite span {
+  display: block; margin-top: .3rem; font-weight: 400; letter-spacing: 0; text-transform: none;
+  font-family: var(--sans); color: var(--ink-3); font-size: var(--step--1); line-height: 1.45;
+}
 .divider { border: 0; border-top: 1px solid var(--line); margin-block: clamp(2.5rem, 4vw, 4rem); }
 .cs-diagram {
   margin: 2.5rem auto; max-width: none;

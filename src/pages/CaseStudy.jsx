@@ -35,6 +35,16 @@ function Block({ block }) {
       </ul>
     );
   if (block.p) return <p dangerouslySetInnerHTML={{ __html: block.p }} />;
+  if (block.quote)
+    return (
+      <blockquote className="cs-quote">
+        <p dangerouslySetInnerHTML={{ __html: block.quote }} />
+        <cite>
+          {block.quoteName}
+          {block.quoteRole && <span>{block.quoteRole}</span>}
+        </cite>
+      </blockquote>
+    );
   return null;
 }
 
@@ -139,7 +149,7 @@ function groupSections(sections) {
     } else if (block.video) {
       groups.push({ type: "video", video: block });
     } else if (block.carousel) {
-      groups.push({ type: "carousel", carousel: block });
+      groups.push({ type: "carousel", carousel: block.carousel });
     } else {
       const last = groups[groups.length - 1];
       if (last && last.type === "prose") last.blocks.push(block);
