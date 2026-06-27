@@ -1,5 +1,5 @@
 export const RESUME_URL =
-  "https://drive.google.com/file/d/1lcmysV6cNFfGjnAKMM3M4QBzRndSZGj7/view?usp=sharing";
+  "https://drive.google.com/file/d/1_ACR6F3sVHAHtyk0V9ixFpCsTwso5JGx/view?usp=drive_link";
 
 export const NAV = [
   { to: "/", label: "About", end: true },
