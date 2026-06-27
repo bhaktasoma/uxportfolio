@@ -36,7 +36,7 @@ const leadership = [
     role: "Founding UX Leader",
     companies: [{ name: "Harness", url: "https://www.harness.io/" }],
     summary:
-      "First UX hire, reporting to the CTO. Bootstrapped the UX function and drove 5× ARR growth, launching Cloud Cost Management to GA with 70+ customers in six months.",
+      "First UX hire, reporting to the CTO. Bootstrapped the UX function during a stretch of 5× company-wide ARR growth, launching Cloud Cost Management to GA with 70+ customers in six months.",
     caseStudySlug: "cloud-cost",
   },
 ];
@@ -71,9 +71,9 @@ export default function Home() {
             </p>
             <p className="lead">
               Over 15 years in UX, I've worked across startups and Fortune 500 companies, including
-              driving <strong className="text-accent">5× ARR growth at Harness</strong> as its
-              founding UX hire, embedding Lean UX and Design Thinking into Enterprise SaaS, Cloud,
-              DevSecOps, and AI/ML products.
+              Harness, where I was founding UX hire during a stretch of{" "}
+              <strong className="text-accent">5× company-wide ARR growth</strong>, embedding Lean UX
+              and Design Thinking into Enterprise SaaS, Cloud, DevSecOps, and AI/ML products.
             </p>
           </div>
           <div className="btn-row mt-lg">

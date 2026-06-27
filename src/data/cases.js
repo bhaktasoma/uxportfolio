@@ -144,7 +144,7 @@ export const cases = [
     meta: [
       ["Role", "Head of UX / Founder"],
       ["Focus", "Design systems as AI infrastructure"],
-      ["Span", "Cybersecurity startup (stealth) and Equinix (2021)"],
+      ["Span", "Cybersecurity startup (stealth)"],
     ],
     stats: [
       { num: "2", label: "Company-wide design systems founded" },

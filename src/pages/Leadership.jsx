@@ -138,7 +138,7 @@ export default function Leadership() {
               { num: "$160M", label: "Portfolio led at Equinix" },
               { num: "$30M", label: "Seed round shaped by my POCs" },
               { num: "12", label: "Design partners co-created with" },
-              { num: "5×", label: "ARR growth driven at Harness" },
+              { num: "5×", label: "Company-wide ARR growth during my Harness tenure" },
             ]}
           />
         </div>
