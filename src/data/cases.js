@@ -65,7 +65,7 @@ export const cases = [
     year: "2025",
     company: "Cybersecurity Startup (stealth mode)",
     role: "Head of UX (Founding)",
-    title: "Building UX From 0→1 for an AI-Powered Cyber Defense Platform",
+    title: "Building UX From 0 to 1 for an AI-Powered Cyber Defense Platform",
     summary:
       "Founding Head of UX at a stealth cybersecurity startup, co-created investor-facing POCs that helped secure a $30M seed round, built a 4-designer team, and embedded AI into the design-to-dev workflow.",
     cardRole: "Head of UX (Founding), helped secure a $30M seed round.",
@@ -73,7 +73,7 @@ export const cases = [
       "As the founding Head of UX at a stealth-mode cybersecurity startup, I'm building the design function from scratch, shaping the product narrative that helped close a $30M seed round, and embedding AI into how my team designs and ships.",
     meta: [
       ["Role", "Head of UX (Founding)"],
-      ["Focus", "0→1 product strategy, AI-augmented design ops"],
+      ["Focus", "0 to 1 product strategy, AI-augmented design ops"],
       ["Stage", "Seed, stealth mode"],
       ["Company", "80+ employees globally"],
     ],
@@ -116,7 +116,7 @@ export const cases = [
       {
         feature: {
           h2: "Maturing the design function: three verticals",
-          p: "A founding design hire who only ships screens caps the function's value early. As we've grown, I've structured the design org into three verticals so it matures alongside the business, not after it: <strong>Strategic Research</strong>, grounded in our CISO, NetSec, and InfoSec partners plus ongoing market and competitive analysis, <strong>Product Design</strong>, running the 0→1 POC tracks, and <strong>Business Design</strong>, where the design team partners with the CEO and Sales to lead brand strategy, sales decks, and the investor pitch itself, treating go-to-market storytelling as a design problem, not a marketing afterthought.",
+          p: "A founding design hire who only ships screens caps the function's value early. As we've grown, I've structured the design org into three verticals so it matures alongside the business, not after it: <strong>Strategic Research</strong>, grounded in our CISO, NetSec, and InfoSec partners plus ongoing market and competitive analysis, <strong>Product Design</strong>, running the 0 to 1 POC tracks, and <strong>Business Design</strong>, where the design team partners with the CEO and Sales to lead brand strategy, sales decks, and the investor pitch itself, treating go-to-market storytelling as a design problem, not a marketing afterthought.",
           p2: "Business Design is also where I'm building a different muscle in my designers: not just craft, but the judgment to connect a user problem or a market gap to a real business case. I expect this vertical to grow into a dedicated GTM and PLG design practice as we scale.",
           diagram: "team-building",
           caption: "Three verticals, one design function, converging into the seed round and this year's ARR target.",
@@ -149,12 +149,12 @@ export const cases = [
     stats: [
       { num: "2", label: "Company-wide design systems founded" },
       { num: "4", label: "Tools wired into one MCP server: Figma, GitHub, Claude Code, VS Code" },
-      { num: "10 → 100", label: "Effective exploration throughput, design and UI team to whole company" },
+      { num: "10 to 100", label: "Effective exploration throughput, design and UI team to whole company" },
       { num: "2-way", label: "Design ↔ code sync, not a one-way handoff" },
     ],
     sections: [
       { h2: "At a glance" },
-      { p: "I've built a company-wide design system from zero twice: <strong>Quix</strong> at Equinix in 2021, and a tokenized atomic design system at my current cybersecurity startup, run behind a design system <strong>MCP server</strong> wired into Figma, GitHub, Claude Code, and VS Code. Quix solved a culture and governance problem inside a company that already had hundreds of engineers. This one started smaller and more practical: a 10-person design and UI team couldn't keep up with a company racing toward a seed round, and the fix changed who gets to build a prototype. The org-building and investor-narrative side of that same stretch is its own story, in my <a href=\"/case-studies/cyber-defense-platform\">0→1 case study</a>." },
+      { p: "I've built a company-wide design system from zero twice: <strong>Quix</strong> at Equinix in 2021, and a tokenized atomic design system at my current cybersecurity startup, run behind a design system <strong>MCP server</strong> wired into Figma, GitHub, Claude Code, and VS Code. Quix solved a culture and governance problem inside a company that already had hundreds of engineers. This one started smaller and more practical: a 10-person design and UI team couldn't keep up with a company racing toward a seed round, and the fix changed who gets to build a prototype. The org-building and investor-narrative side of that same stretch is its own story, in my <a href=\"/case-studies/cyber-defense-platform\">0 to 1 case study</a>." },
       { note: "We're still seed-stage and in stealth, so I'm light on screens and specifics here too; the system, the numbers, and the MCP server are exactly how it played out." },
       {
         atGlance: [
@@ -653,7 +653,7 @@ export const cases = [
     lead:
       "I joined Harness as its first UX hire, leading design for CI/CD, then Security Ops and Feature Flags. That vantage point surfaced cloud cost as a real, unowned opportunity. I used research, a Lean UX Canvas and early customer conversations, to build the case, pitched it with a Technical Lead partner to our CEO and CTO, and took Cloud Cost Management from a blank team to GA in six months.",
     meta: [
-      ["Role", "Founding UX Leader → Product Strategist"],
+      ["Role", "Founding UX Leader to Product Strategist"],
       ["Focus", "Research-led strategy, generative research, co-creation, data viz"],
       ["Team", "PM, Engineering Lead, and SRE, plus a 25-customer co-creation panel"],
     ],
