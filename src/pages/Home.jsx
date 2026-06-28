@@ -9,7 +9,7 @@ const leadership = [
     role: "Head of UX",
     companies: [{ name: "Cybersecurity Startup (stealth mode)" }],
     summary:
-      "Built the design function from the ground up and am leading UX strategy for a new AI-powered, mathematically rigorous Cyber Defense Management Platform from 0→1. Co-created POCs with 12 design partners to shape the investor-facing product narrative behind our $30M seed round, hired and ramped a 4-designer team to run parallel POC tracks, and embedded AI into the design-to-dev workflow (tokenized design system, MCP server, Figma/GitHub/Claude integration) to boost team efficiency. Though still seed-stage and in stealth, we're on track to hit $1M ARR this year.",
+      "Built the design function from the ground up and am leading UX strategy for a new AI-powered, mathematically rigorous Cyber Defense Management Platform from 0 to 1. Co-created POCs with 12 design partners to shape the investor-facing product narrative behind our $30M seed round, hired and ramped a 4-designer team to run parallel POC tracks, and embedded AI into the design-to-dev workflow (tokenized design system, MCP server, Figma/GitHub/Claude integration) to boost team efficiency. Though still seed-stage and in stealth, we're on track to hit $1M ARR this year.",
     teamBuildingLink: true,
     caseStudySlug: "cyber-defense-platform",
     also: {
@@ -61,7 +61,7 @@ export default function Home() {
             <p className="lead">
               I'm currently Head of UX at a cybersecurity startup, where I built the design function
               from the ground up and am leading a new <strong className="text-accent">AI-powered
-              security product</strong> from 0→1.
+              security product</strong> from 0 to 1.
             </p>
             <p className="lead">
               Before that, I led UX strategy for{" "}
