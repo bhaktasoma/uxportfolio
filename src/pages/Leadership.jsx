@@ -53,6 +53,12 @@ const howILeadTestimonials = [
     name: "Ryder Booth",
     title: "Experience Design · former direct report at Equinix",
   },
+  {
+    quote:
+      "She shines as a brilliant problem solver, but she's also a skilled delegator who aligns tasks with team members' strengths to deliver impactful solutions. Her leadership style creates an environment where her team feels valued and supported.",
+    name: "Asako Nagata",
+    title: "UX & Product Design Leader · former peer manager at Equinix",
+  },
 ];
 
 export default function Leadership() {
