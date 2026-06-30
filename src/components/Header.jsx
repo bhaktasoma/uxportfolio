@@ -28,7 +28,7 @@ export default function Header() {
             ))}
             <li>
               <a className="nav-cta" href={RESUME_URL} target="_blank" rel="noopener" onClick={close}>
-                Résumé
+                Resume
               </a>
             </li>
           </ul>
