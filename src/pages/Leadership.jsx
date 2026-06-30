@@ -9,13 +9,13 @@ const managingUpTestimonials = [
     quote:
       "Soma is an outstanding collaborator who excels at bridging the gap between design and engineering. She challenges her team to think critically about delivering high-value customer outcomes while maintaining consistent, scalable design patterns.",
     name: "Sean Fuller",
-    title: "Software Engineering Manager",
+    title: "Software Engineering Manager · former peer manager at Equinix",
   },
   {
     quote:
       "Her team was highly collaborative in allowing cross-functional contributions to the design system while ensuring that any new components went through a strict governance process and could scale.",
     name: "Simon Lo",
-    title: "Director, Product Design at ServiceNow",
+    title: "Director, Product Design at ServiceNow · former peer manager at Equinix",
   },
 ];
 
