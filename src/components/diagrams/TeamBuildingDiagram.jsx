@@ -103,7 +103,7 @@ export default function TeamBuildingDiagram() {
         Compounding growth
       </text>
       <text x={headX} y={outcomeY + 34} textAnchor="middle" fontSize="11.5" fill="var(--ink-2)" fontFamily="var(--sans)">
-        $30M seed round secured → $1M ARR targeted
+        Eight-figure seed round secured → seven-figure ARR targeted
       </text>
     </svg>
   );
