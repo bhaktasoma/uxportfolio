@@ -122,7 +122,7 @@ export const cases = [
           caption: "Three verticals, one design function, converging into the seed round and this year's ARR target.",
         },
       },
-      { p: "None of those three verticals move fast if Product Design is stuck waiting on engineering for every POC prototype. Solving that was its own project: a tokenized design system and MCP server my team built so anyone in the company could prototype directly against our real design language, detailed in my <a href=\"/case-studies/design-systems-ai-era\">design systems case study</a>." },
+      { p: "None of those three verticals move fast if Product Design is stuck waiting on engineering for every POC prototype. Solving that was its own project: a tokenized design system and MCP server my team built so anyone in the company could prototype directly against our real design language, detailed in my <a href=\"#/case-studies/design-systems-ai-era\">design systems case study</a>." },
       { h2: "Early traction" },
       { p: "We're still seed-stage and in stealth, but we're on track to hit a <strong>seven-figure ARR target</strong> this year, and the company has grown past <strong>80 employees globally</strong> since that seed round closed, early validation that design-partner-led UX and a rigorous platform compound rather than compete." },
       { h2: "What I'm learning" },
@@ -154,7 +154,7 @@ export const cases = [
     ],
     sections: [
       { h2: "At a glance" },
-      { p: "I've built a company-wide design system from zero twice: <strong>Quix</strong> at Equinix in 2021, and a tokenized atomic design system at my current cybersecurity startup, run behind a design system <strong>MCP server</strong> wired into Figma, GitHub, Claude Code, and VS Code. Quix solved a culture and governance problem inside a company that already had hundreds of engineers. This one started smaller and more practical: a 10-person design and UI team couldn't keep up with a company racing toward a seed round, and the fix changed who gets to build a prototype. The org-building and investor-narrative side of that same stretch is its own story, in my <a href=\"/case-studies/cyber-defense-platform\">0 to 1 case study</a>." },
+      { p: "I've built a company-wide design system from zero twice: <strong>Quix</strong> at Equinix in 2021, and a tokenized atomic design system at my current cybersecurity startup, run behind a design system <strong>MCP server</strong> wired into Figma, GitHub, Claude Code, and VS Code. Quix solved a culture and governance problem inside a company that already had hundreds of engineers. This one started smaller and more practical: a 10-person design and UI team couldn't keep up with a company racing toward a seed round, and the fix changed who gets to build a prototype. The org-building and investor-narrative side of that same stretch is its own story, in my <a href=\"#/case-studies/cyber-defense-platform\">0 to 1 case study</a>." },
       { note: "We're still seed-stage and in stealth, so I'm light on screens and specifics here too; the system, the numbers, and the MCP server are exactly how it played out." },
       {
         atGlance: [
@@ -471,7 +471,7 @@ export const cases = [
         caption: "Define, design, develop, document, publish: every component, from any team, moved through the same five steps before it counted as part of Quix.",
       },
       { h2: "Where the resistance actually was" },
-      { p: "The pushback was never really about Quix, the component library was the easy part. It came from global engineering and product teams who'd never been asked to share ownership of how they built things before, and from VPs across both lines who'd watched company-wide initiatives like this fail the same way before. This is the same leadership without direct authority I describe on my <a href=\"/leadership\">Leadership page</a>: nobody who pushed back on Quix reported to me, and most of them outranked me." },
+      { p: "The pushback was never really about Quix, the component library was the easy part. It came from global engineering and product teams who'd never been asked to share ownership of how they built things before, and from VPs across both lines who'd watched company-wide initiatives like this fail the same way before. This is the same leadership without direct authority I describe on my <a href=\"#/leadership\">Leadership page</a>: nobody who pushed back on Quix reported to me, and most of them outranked me." },
       { p: "I ran the same listening tour with engineering that I'd already run with design. The workshops surfaced the real friction underneath the surface objections: a genuinely new way of working, a new way of collaborating across regions, and real cultural differences in how our US, Polish, and Singaporean teams approached ownership and decision-making. None of that resolves with a better contribution checklist." },
       { p: "What actually moved the needle was smaller than any strategy deck. I gained alignment by understanding each team's pain points first and connecting Quix to their own professional goals, not just the company's roadmap. I built trust by listening before building anything, then shipped a lean pilot fast enough that skeptics could see real value before anyone asked them to commit. And the adoption held because it was anchored in evidence and shared ownership across engineering and design, not a mandate handed down from above." },
       {
@@ -637,7 +637,7 @@ export const cases = [
         "HR opened a workstream to redesign every other discipline's career path using the same approach",
       ] },
       { h2: "What this taught me about leading people" },
-      { p: "This is the same instinct I write about on my <a href=\"/leadership\">Leadership page</a>: co-create with people instead of handing them a plan, and the clearest sign it's working is when someone pushes back on your draft and turns out to be right. Asako and I could have written this framework faster alone. It would have been weaker, and fewer people would have trusted it enough to actually use it. People plan their next move around frameworks they helped shape, not ones they were handed." },
+      { p: "This is the same instinct I write about on my <a href=\"#/leadership\">Leadership page</a>: co-create with people instead of handing them a plan, and the clearest sign it's working is when someone pushes back on your draft and turns out to be right. Asako and I could have written this framework faster alone. It would have been weaker, and fewer people would have trusted it enough to actually use it. People plan their next move around frameworks they helped shape, not ones they were handed." },
     ],
   },
 
@@ -725,7 +725,7 @@ export const cases = [
         alt: "Competitive landscape analysis comparing cloud providers, startups, and established cost management vendors against what's missing, our strength, How might we questions, and resulting strategy: complete developer context and cost visibility, root cost analysis and recommendation, hourly time-to-know and governance",
         caption: "The research artifact behind the pitch: where every competitor was reactive and infrastructure-only, and where our CI/CD platform let us be neither.",
       },
-      { p: "Buy-in is where the harder work started: no product, no PM, no engineering team yet, just the case we'd made. I helped bring on a Director of Product Management to turn the opportunity into a fundable roadmap, and an Engineering Lead and SRE to scope what was buildable in six months. What mattered more than headcount was keeping research and design a strategic partner once that team existed, not an execution layer brought in after the roadmap was set, the same habit I describe on my <a href=\"/leadership\">Leadership page</a>." },
+      { p: "Buy-in is where the harder work started: no product, no PM, no engineering team yet, just the case we'd made. I helped bring on a Director of Product Management to turn the opportunity into a fundable roadmap, and an Engineering Lead and SRE to scope what was buildable in six months. What mattered more than headcount was keeping research and design a strategic partner once that team existed, not an execution layer brought in after the roadmap was set, the same habit I describe on my <a href=\"#/leadership\">Leadership page</a>." },
       { p: "With the team formed, I brought that group into discovery rather than handing them a finished brief, built the pitch's Lean UX Canvas out into a full Vision Deck, and we socialized it across the org to build momentum before asking for more headcount or budget." },
       {
         quote:
@@ -815,7 +815,7 @@ export const cases = [
         quoteRole: "CTO at Harness, managed Soma directly · now Founder, BaseRock.ai",
       },
       { h2: "What this taught me about research as a strategic tool" },
-      { p: "The bigger first for me was proving research itself could be the strategic move, not a phase before the real work of design starts. The Lean UX Canvas and the 25-customer panel got us bought in, kept us honest about what we actually knew, and kept the product right once engineering started building and reality pushed back. UX isn't just what you build, it's how you evolve it: staying hands-on with customers and data through GA, not handing research off once the wireframes were done, is the habit I describe on my <a href=\"/leadership\">Leadership page</a>, and where I learned it holds up under real deadline pressure." },
+      { p: "The bigger first for me was proving research itself could be the strategic move, not a phase before the real work of design starts. The Lean UX Canvas and the 25-customer panel got us bought in, kept us honest about what we actually knew, and kept the product right once engineering started building and reality pushed back. UX isn't just what you build, it's how you evolve it: staying hands-on with customers and data through GA, not handing research off once the wireframes were done, is the habit I describe on my <a href=\"#/leadership\">Leadership page</a>, and where I learned it holds up under real deadline pressure." },
     ],
   },
 ];
